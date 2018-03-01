@@ -300,14 +300,16 @@ function clearButton () {
     
               //This code removes the taxable income the user entered in the textfield.
               document.getElementById("incomeInput").value = "";
-              document.getElementById("filingStatus").value = "";
+              
               
               
               //This code resets the dropdown box to the "Single" filer status.
               document.getElementById("filingStatus").selectedIndex = 0;
-              document.getElementById("incomeInput").selectedIndex = 0;
-             
-
+              
+              
+              //This code remove ALL of the expense values the user types into the form (textfields)
+              document.getElementById("taxEstimate").innerHTML = "";
+              document.getElementById("taxBracket").innerHTML = "";
 
 
 
